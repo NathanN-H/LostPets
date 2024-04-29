@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Lost Pets</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
+        <link rel="shortcut icon" type="image/x-icon" href="Design-Images/cat_shortcuticon.png">
+        <style>
+            body {
+                font-family: 'Poppins', sans-serif; /* Update font family */
+            }
+            .reward{
+                margin: 20px auto;
+                max-width: 90%;
+                padding: 20px;
+                background-color: #f9f9f9;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                align-items: center;
+            }
+            .reward h1{
+                text-align: center;
+            }
+            .reward p{
+                text-align: center;
+            }
+            .reward .rewardintro{
+                margin: 20px auto;
+                max-width: 80%;
+                padding: 20px;
+                background-color: #f9f9f9;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                align-items: center;
+            }
+            .row{
+                padding-top: 50px;
+                text-align: center;
+            }
+            .row::after{
+                content: "";
+                clear: both;
+                display: table;
+            }
+            li {
+                text-align: center;
+                padding: 1%;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="home.php"><img class="logo"src="Design-Images/cat_logo.png" alt="Cat Icon"></a>
+            <h1 class="title">Lost Pets</h1>
+            <p class="quote">"Help us, to help you!"</p>
+            <nav>
+                <div class="topnav" id="myTopnav">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            Missing Pets
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="report_missing_pet.php">Report Missing Pets</a>
+                            <a href="missing_pets.php">View Missing Pets</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            Found Pets
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="report_found_pets.php">Report Found Pets</a>
+                            <a href="found_pets.php">View Found Pets</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn"> <img src="">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="shop.php">Shop</a>
+                            <a href="help_advice.php" class="active">Help & Advice</a>
+                            <a href="contact.html">Contact Us</a>
+                            <a href="admin_page.php">Admin</a>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                    <div class="right-links" style="float: right">
+                        <a href="account.php">Account</a>
+                        <a href="logout.php"> <buttom class="btn">Log Out</buttom></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="reward">
+            <h1>Our Reward System</h1>
+            <p class="rewardintro">
+                At Lost Pets, we're not just passionate about pets; we're committed to fostering a community where every lost pet finds its way back home. With that vision in 
+                mind, we've crafted an innovative incentive program that transforms every act of kindness into tangible rewards.
+            </p>
+            <p class="rewardintro">
+                Imagine this: you're strolling through the neighborhood when you spot a lost furry friend, looking forlorn and confused. Without hesitation, you spring into action, reporting 
+                the sighting through our dedicated platform. Little do you know, that single act sets off a chain reaction of joy and gratitude.
+            </p>
+        </div>
+        <div class="row">
+            <div class="reward">
+                <h1>How it works!</h1>
+                <strong>1) Earn as you Reunite</strong>
+                <p class="rewardintro">
+                    For every successful reunion facilitated through your report, you earn reward points. Whether it's a lost kitten nestled in a backyard or a wandering pup on the streets, 
+                    each reunion earns you points that add up to valuable rewards.
+                </p>
+                <strong>2) Redeem for Perks and Benefits</strong>
+                <p class="rewardintro">
+                    These reward points aren't just numbers; they're keys to a treasure trove of perks and benefits. From gift vouchers at pet stores to exclusive discounts on grooming 
+                    services, the possibilities are as endless as your generosity.
+                </p>
+                <strong>3) The Joy of Giving Back</strong>
+                <p class="rewardintro">
+                    But perhaps the greatest reward of all is the joy of knowing you've made a difference. Every wagging tail and purring cuddle is a testament to your compassion and 
+                    commitment to our four-legged friends.
+                </p>
+                <strong>4) Community, United</strong>
+                <p class="rewardintro">
+                    Together, we form a formidable network of pet lovers, united in our mission to create safer, happier communities for our furry companions. With each reunion, we 
+                    strengthen the bonds that tie us together, building a world where no pet is left behind.
+                </p>
+            </div>
+        </div>
+        <div class="reward">
+            <h1>How to get points?</h1>
+            <p>
+                To be able to recieve the points and rewards all you will need to do is gather proof that you have: 
+            </p>
+            <p>
+                <li>Found the a missing pet.</li>
+                <li>Kept the missing pet safe and fed.</li>
+                <li>Made sure that the missing pet that you have found is possibly on the website.</li>
+                <li>Contact us showing all of the evidence that you have found a missing pet</li>
+            </p>
+            <h1>How will we make sure you get the points?</h1>
+            <p>
+                Once you have provided all of the evidence of the missing pet we will then go further along to try to find the missing pets owner. This process is potentially long lasting
+                however, in some cases it might be quicker than others. This is the process we take:
+            </p>
+            <p>
+                <li>Gather all of the information you have provided.</li>
+                <li>Gather all of the picture or evidence of the missing pet.</li>
+                <li>Look through the entire database of missing pets in which we have to find the missing pet.</li>
+                <li>Once we have found the missing pet and matched it to its owner. We will then go long to locating and contacting the owner.</li>
+                <li>However, if we cannot find that missing pet in you database then we proceed to contact all of the local missing pet services and all facebook groups for you!</li>
+                <li>
+                    But, if there is a overall success with getting the missing pet to the owner we will then add points to your account. Which you will then be able to select the available 
+                    prizes.
+                </li>
+            </p>
+            <p>
+                So, join us on this rewarding journey. Let's turn every lost pet's tale into a story of hope, resilience, and love. Together, we can make a paw-sitive impact that reverberates 
+                far beyond our neighborhoods and into the hearts of pet owners everywhere.
+            </p>
+        </div>
+        <script>
+            window.embeddedChatbotConfig = {
+            chatbotId: "LaKRJr_-iPekl6Al0xMG6",
+            domain: "www.chatbase.co"
+            }
+        </script>
+        <script
+            src="https://www.chatbase.co/embed.min.js"
+            chatbotId="LaKRJr_-iPekl6Al0xMG6"
+            domain="www.chatbase.co"
+            defer>
+        </script>
+    </body>
+</html>

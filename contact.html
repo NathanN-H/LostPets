@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Lost Pets</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
+        <link rel="shortcut icon" type="image/x-icon" href="Design-Images/cat_shortcuticon.png">
+        <style>
+            body {
+                font-family: 'Poppins', sans-serif; /* Update font family */
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="home.php"><img class="logo"src="Design-Images/cat_logo.png" alt="Cat Icon"></a>
+            <h1 class="title">Lost Pets</h1>
+            <p class="quote">"Help us, to help you!"</p>
+            <nav>
+                <div class="topnav" id="myTopnav">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            Missing Pets
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="report_missing_pet.php">Report Missing Pets</a>
+                            <a href="missing_pets.php">View Missing Pets</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            Found Pets
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="report_found_pets.php">Report Found Pets</a>
+                            <a href="found_pets.php">View Found Pets</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn"> <img src="">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="shop.php">Shop</a>
+                            <a href="help_advice.php">Help & Advice</a>
+                            <a href="#" class="active">Contact Us</a>
+                            <a href="admin_page.php">Admin</a>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                    <div class="right-links" style="float: right">
+                        <a href="account.php">Account</a>
+                        <a href="logout.php"> <buttom class="btn">Log Out</buttom></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <script>
+            window.embeddedChatbotConfig = {
+            chatbotId: "LaKRJr_-iPekl6Al0xMG6",
+            domain: "www.chatbase.co"
+            }
+        </script>
+        <script
+            src="https://www.chatbase.co/embed.min.js"
+            chatbotId="LaKRJr_-iPekl6Al0xMG6"
+            domain="www.chatbase.co"
+            defer>
+        </script>
+    </body>
+</html>

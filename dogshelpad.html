@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Lost Pets</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
+        <link rel="shortcut icon" type="image/x-icon" href="Design-Images/cat_shortcuticon.png">
+        <style>
+            body {
+                font-family: 'Poppins', sans-serif; /* Update font family */
+            }
+            .dog{
+                margin: 20px auto;
+                max-width: 90%;
+                padding: 20px;
+                background-color: #f9f9f9;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                align-items: center;
+            }
+            .dog h1{
+                text-align: center;
+            }
+            .dog .dogintro{
+                margin: 20px auto;
+                max-width: 80%;
+                padding: 20px;
+                background-color: #f9f9f9;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                align-items: center;
+            }
+            .column{
+                float: left;
+                width: 33.33%;
+                padding-bottom: 5%;
+            }
+            
+            .column p{
+                padding: 30px;
+                font-size: 20px;
+            }
+            .row{
+                padding-top: 50px;
+                text-align: center;
+            }
+            .row::after{
+                content: "";
+                clear: both;
+                display: table;
+            }
+            .dogtips{
+                max-width: 80%;
+
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="home.php"><img class="logo"src="Design-Images/cat_logo.png" alt="Cat Icon"></a>
+            <h1 class="title">Lost Pets</h1>
+            <p class="quote">"Help us, to help you!"</p>
+            <nav>
+                <div class="topnav" id="myTopnav">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            Missing Pets
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="report_missing_pet.php">Report Missing Pets</a>
+                            <a href="missing_pets.php">View Missing Pets</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            Found Pets
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="report_found_pets.php">Report Found Pets</a>
+                            <a href="found_pets.php">View Found Pets</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn"> <img src="">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="shop.php">Shop</a>
+                            <a href="help_advice.php">Help & Advice</a>
+                            <a href="contact.html" class="active">Contact Us</a>
+                            <a href="admin_page.php">Admin</a>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                    <div class="right-links" style="float: right">
+                        <a href="account.php">Account</a>
+                        <a href="logout.php"> <buttom class="btn">Log Out</buttom></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="dog">
+            <h1>Keep your dogs safe!</h1>
+            <p class="dogintro">
+                Welcome to our guide on dog safety! Whether you're a seasoned dog owner or someone who simply enjoys the company of these furry companions, understanding how to interact 
+                safely with dogs is essential for both your well-being and theirs. Dogs are beloved members of countless households around the world, providing companionship, loyalty, 
+                and joy to millions. However, it's important to recognize that dogs, like any other animals, have their own behaviors, instincts, and boundaries.
+            </p>
+            <p class="dogintro">
+                We'll cover some fundamental principles of dog safety, including how to approach and interact with dogs, recognizing signs of stress or aggression, and teaching children to 
+                respect dogs' space and needs. By learning these key concepts, you'll not only enhance your own safety but also contribute to positive interactions between humans and dogs 
+                in your community.
+            </p>
+            <p class="dogintro">
+            So, whether you're encountering a new dog on the street, welcoming a furry friend into your home, or simply looking to deepen your understanding of these amazing creatures, 
+            let's embark on this journey of dog safety together.
+            </p>
+            <div class="row">
+                <h2>Dog Safety Checklist</h2>
+                <p>
+                    This checklist provided is a concise yet comprehensive tool designed to help pet owners ensure the safety and well-being of their dogs. It covers essential aspects of 
+                    responsible dog ownership, including veterinary care, identification, training, nutrition, exercise, grooming, emergency preparedness, and awareness of potential hazards. 
+                    Each item on the checklist serves as a reminder of key practices and considerations necessary for maintaining a safe and healthy environment for dogs. By systematically 
+                    addressing each item on the checklist, pet owners can minimize risks and provide their dogs with the care and protection they need to thrive.
+                </p>
+                <a href="help-advice-pages/dogcheck.xlsx" download>
+                    <img src="help-advice-pages/dogcheck.png" width="300">
+                </a>
+                <p>Download the file to gain access to the document by clicking on the image</p>
+            </div>
+            <div class="row">
+                <h2>Dog Safety Tips</h2>
+                <div class="dogintro">
+                    <strong>1) Understanding Dog Body Language</strong>
+                    <p>
+                        <li>Learn to recognize signs of a dog's comfort, stress, fear, or aggression. This includes body posture, facial expressions, tail wagging, and vocalizations.</li>
+                    </p>
+                    <strong>2) Approaching Dogs</strong>
+                    <p>
+                        <li>Always ask the owner for permission before approaching a dog.</li>
+                        <li>Approach slowly and calmly, allowing the dog to sniff your hand before attempting to pet them.</li>
+                        <li>Avoid making sudden movements or loud noises that could startle the dog.</li>
+                    </p>
+                    <strong>3) Interacting with Dogs</strong>
+                    <p>
+                        <li>Avoid direct eye contact, as this can be perceived as threatening by some dogs.</li>
+                        <li>Pet the dog gently and avoid touching sensitive areas such as the face, tail, or paws.</li>
+                        <li>Respect the dog's personal space and do not overwhelm them with attention.</li>
+                    </p>
+                    <strong>4) Supervise Interactions with Children</strong>
+                    <p>
+                        <li>Teach children how to behave around dogs, including gentle petting and not disturbing them while eating or sleeping.</li>
+                        <li>Never leave young children unsupervised with a dog, no matter how familiar they are with each other.</li>
+                    </p>
+                    <strong>5) Training and Socialization</strong>
+                    <p>
+                        <li>Enroll your dog in obedience training classes to teach basic commands and improve their behavior.</li>
+                        <li>Socialize your dog with other dogs and people in a controlled environment to prevent fear or aggression towards unfamiliar individuals.</li>
+                    </p>
+                    <strong>6) Securing Environment</strong>
+                    <p>
+                        <li>Ensure that your dog is kept in a secure enclosure or on a leash when outdoors to prevent them from wandering off or getting into potentially dangerous situations.</li>
+                        <li>Keep hazardous items such as toxic foods, chemicals, and small objects out of reach of your dog.</li>
+                    </p>
+                    <strong>7) Health Care</strong>
+                    <p>
+                        <li>Schedule regular veterinary check-ups to monitor your dog's health and address any medical concerns promptly.</li>
+                        <li>Keep up-to-date with vaccinations, parasite prevention, and grooming to maintain your dog's overall well-being.</li>
+                    </p>
+                    <strong>8) Emergancy Preparedness</strong>
+                    <p>
+                        <li>Familiarize yourself with basic first aid techniques for dogs, including how to stop bleeding, perform CPR, and treat common injuries.</li>
+                        <li>Have a plan in place for emergencies, including the nearest veterinary hospital and contact information for animal control services.</li>
+                    </p>
+                    <strong>9) Respect Boundaries</strong>
+                    <p>
+                        <li>Respect the boundaries of other dog owners and their pets by maintaining a safe distance if requested.</li>
+                        <li>If you encounter a stray or unfamiliar dog, avoid approaching them and contact local animal control for assistance.</li>
+                    </p>
+                    <strong>10) Continuous Learning</strong>
+                    <p>
+                        <li>Stay informed about dog behavior, training techniques, and safety guidelines through reputable sources such as books, websites, and professional trainers.</li>
+                        <li>Continuously assess and adjust your approach to dog safety based on your experiences and interactions with dogs.</li>
+                    </p>
+                    <p>
+                    By following this checklist, you can help create a safer and more enjoyable environment for both you and the dogs you encounter in your daily life.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script>
+            window.embeddedChatbotConfig = {
+            chatbotId: "LaKRJr_-iPekl6Al0xMG6",
+            domain: "www.chatbase.co"
+            }
+        </script>
+        <script
+            src="https://www.chatbase.co/embed.min.js"
+            chatbotId="LaKRJr_-iPekl6Al0xMG6"
+            domain="www.chatbase.co"
+            defer>
+        </script>
+    </body>
+</html>
