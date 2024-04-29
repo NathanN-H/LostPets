@@ -37,7 +37,7 @@ if (!isset($_SESSION['valid'])) {
             background-color: rgba(255, 255, 255, 1);
             transition-delay: 0s, 0s;
             opacity: 1;
-            font-size: 2em;
+            font-size: 1.2em;
 
         }
 

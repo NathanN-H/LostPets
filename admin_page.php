@@ -164,6 +164,9 @@ $resultApprovedFoundPets = mysqli_query($con, $queryApprovedFoundPets);
         .adminintro strong {
             font-weight: bold;
         }
+        .shop-title{
+            padding-top: 50px;
+        }
     </style>
 </head>
 <body>
@@ -619,7 +622,7 @@ $resultApprovedFoundPets = mysqli_query($con, $queryApprovedFoundPets);
                         }
                     } 
                 ?>
-                <h1 onclick="toggleAddItemForm()" style="cursor: pointer;">Add Item to Shop</h1>
+                <h1 class="shop-title" onclick="toggleAddItemForm()" style="cursor: pointer;">Add Item to Shop</h1>
                 <div class="box form-box" id="addItemForm" style="display: none;">
                     <form action="" method="POST" enctype="multipart/form-data">
                         
@@ -678,7 +681,7 @@ $resultApprovedFoundPets = mysqli_query($con, $queryApprovedFoundPets);
                     }
                 ?>
 
-                <h1 onclick="toggleAddVoucherForm()" style="cursor: pointer;">Add Voucher to Shop</h1>
+                <h1 class="shop-title" onclick="toggleAddVoucherForm()" style="cursor: pointer;">Add Voucher to Shop</h1>
                 <div class="box form-box" id="addVoucherForm" style="display: none;">
                     <form action="" method="POST" enctype="multipart/form-data">
 
@@ -710,7 +713,7 @@ $resultApprovedFoundPets = mysqli_query($con, $queryApprovedFoundPets);
                 </div>
                 
 
-                <h1 onclick="toggleRemoveItem()" style="cursor: pointer;">Remove Item</h1>
+                <h1 class="shop-title" onclick="toggleRemoveItem()" style="cursor: pointer;">Remove Item</h1>
                     <table id="removeItem" style="display: none;">
                         <thead>
                             <tr>
@@ -750,7 +753,7 @@ $resultApprovedFoundPets = mysqli_query($con, $queryApprovedFoundPets);
                         </tbody>
                     </table>
                 
-                <h1 onclick="toggleRemoveVoucher()" style="cursor: pointer;">Remove Voucher</h1>
+                <h1 class="shop-title" onclick="toggleRemoveVoucher()" style="cursor: pointer;">Remove Voucher</h1>
                 <table id="removeVoucher" style="display: none;">
                     <thead>
                         <tr>
@@ -788,7 +791,7 @@ $resultApprovedFoundPets = mysqli_query($con, $queryApprovedFoundPets);
                     </tbody>
                 </table>
 
-                <h1 onclick="toggleEditItem()" style="cursor: pointer;">All Items</h1>
+                <h1 class="shop-title" onclick="toggleEditItem()" style="cursor: pointer;">All Items</h1>
                 <table id="editItem" style="display: none;">
                         <tr>
                             <th>ID</th>
@@ -820,7 +823,7 @@ $resultApprovedFoundPets = mysqli_query($con, $queryApprovedFoundPets);
                         ?>
                 </table>
 
-                <h1 onclick="toggleEditVoucher()" style="cursor: pointer;">All Vouchers</h1>
+                <h1 class="shop-title" onclick="toggleEditVoucher()" style="cursor: pointer;">All Vouchers</h1>
                 <table id="editVoucher" style="display: none;">
                         <tr>
                             <th>ID</th>
