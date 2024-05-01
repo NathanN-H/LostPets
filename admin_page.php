@@ -5,12 +5,6 @@ if(!isset($_SESSION['valid'])){
     header("Location: login.php");
 }
 
-// Check if the user is logged in
-if (!isset($_SESSION['password'])) {
-    // Redirect unauthorized users to the login page
-    header("Location: login.php");
-    exit();
-}
 
 // Check if the logged-in user is admin
 if ($_SESSION['password'] !== "adminpassword") {
