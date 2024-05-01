@@ -6,14 +6,14 @@ if(!isset($_SESSION['valid'])){
 }
 
 // Check if the user is logged in
-if (!isset($_SESSION['username'])) {
+if (!isset($_SESSION['password'])) {
     // Redirect unauthorized users to the login page
     header("Location: login.php");
     exit();
 }
 
 // Check if the logged-in user is admin
-if ($_SESSION['username'] !== "admin") {
+if ($_SESSION['password'] !== "adminpassword") {
     header("Location: home.php"); 
     exit();
 }
@@ -515,7 +515,7 @@ $resultApprovedFoundPets = mysqli_query($con, $queryApprovedFoundPets);
                     <tbody>
                     <?php
                         // Display each user item as a table row
-                        $queryUserItems = "SELECT user_items.*, user.Username AS user_username, user.Email AS user_email, shop_items.item_name, shop_items.item_description, shop_items.price, shop_items.image AS item_image 
+                        $queryUserItems = "SELECT user_items.*, user.Username AS user_username, user.Email AS user_email, user.address AS user_address, shop_items.item_name, shop_items.item_description, shop_items.price, shop_items.image AS item_image 
                                         FROM user_items 
                                         INNER JOIN user ON user_items.user_id = user.Id 
                                         INNER JOIN shop_items ON user_items.item_id = shop_items.id 
@@ -532,6 +532,7 @@ $resultApprovedFoundPets = mysqli_query($con, $queryApprovedFoundPets);
                                 echo "<td>" . $row['user_id'] . "</td>";
                                 echo "<td>" . $row['user_username'] . "</td>";
                                 echo "<td>" . $row['user_email'] . "</td>";
+                                echo "<td>" . $row['user_address'] . "</td>";
                                 echo "<td>" . $row['item_id'] . "</td>";
                                 echo "<td>" . $row['item_name'] . "</td>";
                                 echo "<td>" . $row['item_description'] . "</td>";
@@ -564,7 +565,7 @@ $resultApprovedFoundPets = mysqli_query($con, $queryApprovedFoundPets);
                     <tbody>
                     <?php
                         // Display each user voucher as a table row
-                        $queryUserVouchers = "SELECT user_items.*, user.Username AS user_username, user.Email AS user_email, shop_vouchers.voucher_name, shop_vouchers.voucher_description, shop_vouchers.price, shop_vouchers.image AS voucher_image 
+                        $queryUserVouchers = "SELECT user_items.*, user.Username AS user_username, user.Email AS user_email, user.address AS user_address, shop_vouchers.voucher_name, shop_vouchers.voucher_description, shop_vouchers.price, shop_vouchers.image AS voucher_image 
                                         FROM user_items 
                                         INNER JOIN user ON user_items.user_id = user.Id 
                                         INNER JOIN shop_vouchers ON user_items.item_id = shop_vouchers.id 
@@ -581,6 +582,7 @@ $resultApprovedFoundPets = mysqli_query($con, $queryApprovedFoundPets);
                                 echo "<td>" . $row['user_id'] . "</td>";
                                 echo "<td>" . $row['user_username'] . "</td>";
                                 echo "<td>" . $row['user_email'] . "</td>";
+                                echo "<td>" . $row['user_address'] . "</td>";
                                 echo "<td>" . $row['item_id'] . "</td>";
                                 echo "<td>" . $row['voucher_name'] . "</td>";
                                 echo "<td>" . $row['voucher_description'] . "</td>";
