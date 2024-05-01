@@ -7,7 +7,7 @@ if(!isset($_SESSION['valid'])){
 
 
 // Check if the logged-in user is admin
-if ($_SESSION['password'] !== "adminpassword") {
+if ($_SESSION['username'] !== "admin") {
     header("Location: home.php"); 
     exit();
 }
@@ -498,6 +498,7 @@ $resultApprovedFoundPets = mysqli_query($con, $queryApprovedFoundPets);
                             <th>User ID</th>
                             <th>Username</th>
                             <th>Email</th>
+                            <th>Address</th>
                             <th>Item ID</th>
                             <th>Item Name</th>
                             <th>Item Description</th>
@@ -548,6 +549,7 @@ $resultApprovedFoundPets = mysqli_query($con, $queryApprovedFoundPets);
                             <th>User ID</th>
                             <th>Username</th>
                             <th>Email</th>
+                            <th>Address</th>
                             <th>Voucher ID</th>
                             <th>Voucher Name</th>
                             <th>Voucher Description</th>
