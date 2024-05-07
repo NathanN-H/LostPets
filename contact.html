@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Lost Pets</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
+        <link rel="shortcut icon" type="image/x-icon" href="Design-Images/cat_shortcuticon.png">
+        <style>
+            body {
+                font-family: 'Poppins', sans-serif; /* Update font family */
+            }
+            .contact-box {
+                margin: 20px auto;
+                max-width: 600px;
+                padding: 20px;
+                background-color: #f9f9f9;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                align-items: center;
+            }
+            .contact-box strong {
+                font-weight: bold;
+                margin-top: 10px;
+                display: block;
+                text-align: center;
+                border-bottom: 1px solid #ccc;
+                padding-bottom: 5px;
+            }
+            .contact-box p {
+                margin: 5px 0;
+                text-align: center;
+            }
+            .contact-box h1 {
+                text-align: center;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="home.php"><img class="logo"src="Design-Images/cat_logo.png" alt="Cat Icon"></a>
+            <h1 class="title">Lost Pets</h1>
+            <p class="quote">"Help us, to help you!"</p>
+            <nav>
+                <div class="topnav" id="myTopnav">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            Missing Pets
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="report_missing_pet.php">Report Missing Pets</a>
+                            <a href="missing_pets.php">View Missing Pets</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            Found Pets
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="report_found_pets.php">Report Found Pets</a>
+                            <a href="found_pets.php">View Found Pets</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn"> <img src="">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="shop.php">Shop</a>
+                            <a href="help_advice.php">Help & Advice</a>
+                            <a href="#" class="active">Contact Us</a>
+                            <a href="admin_page.php">Admin</a>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                    <div class="right-links" style="float: right">
+                        <a href="account.php">Account</a>
+                        <a href="logout.php"> <buttom class="btn">Log Out</buttom></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="contact-box">
+            <h1>Contact Us!</h1>
+            <p>If you have any issues or are in need of more help and guidance please contact us!</p>
+            <p><strong>Email: </strong><a href="mailto:nordstromhearne@gmail.com">nordstromhearne@gmail.com</a></p>
+            <p><strong>Contact Number: </strong>+44 77422 08168</p>
+            <div class="Location Map">       
+                <iframe width="80%" height="600px" style="display: block; margin-left:auto; margin-right:auto; padding-top:20px; border: none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2723.1381704254118!2d-1.6106426464858496!3d54.97525394423852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487e70e112c5e9f7%3A0x79a7c60c923dce07!2sNorthumbria%20University!5e0!3m2!1sen!2suk!4v1709805280991!5m2!1sen!2suk" ></iframe>
+            </div>
+        </div>
+        <script>
+            window.embeddedChatbotConfig = {
+            chatbotId: "LaKRJr_-iPekl6Al0xMG6",
+            domain: "www.chatbase.co"
+            }
+        </script>
+        <script
+            src="https://www.chatbase.co/embed.min.js"
+            chatbotId="LaKRJr_-iPekl6Al0xMG6"
+            domain="www.chatbase.co"
+            defer>
+        </script>
+    </body>
+</html>

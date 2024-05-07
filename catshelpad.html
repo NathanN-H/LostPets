@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Lost Pets</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
+        <link rel="shortcut icon" type="image/x-icon" href="Design-Images/cat_shortcuticon.png">
+        <style>
+            body {
+                font-family: 'Poppins', sans-serif; /* Update font family */
+            }
+            .cat{
+                margin: 20px auto;
+                max-width: 90%;
+                padding: 20px;
+                background-color: #f9f9f9;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                align-items: center;
+            }
+            .cat h1{
+                text-align: center;
+            }
+            .cat .catintro{
+                margin: 20px auto;
+                max-width: 80%;
+                padding: 20px;
+                background-color: #f9f9f9;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                align-items: center;
+            }
+            .column{
+                float: left;
+                width: 33.33%;
+                padding-bottom: 5%;
+            }
+            
+            .column p{
+                padding: 30px;
+                font-size: 20px;
+            }
+            .row{
+                padding-top: 50px;
+                text-align: center;
+            }
+            .row::after{
+                content: "";
+                clear: both;
+                display: table;
+            }
+            .cattips{
+                max-width: 80%;
+
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="home.php"><img class="logo"src="Design-Images/cat_logo.png" alt="Cat Icon"></a>
+            <h1 class="title">Lost Pets</h1>
+            <p class="quote">"Help us, to help you!"</p>
+            <nav>
+                <div class="topnav" id="myTopnav">
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            Missing Pets
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="report_missing_pet.php">Report Missing Pets</a>
+                            <a href="missing_pets.php">View Missing Pets</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            Found Pets
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="report_found_pets.php">Report Found Pets</a>
+                            <a href="found_pets.php">View Found Pets</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn"> <img src="">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="shop.php">Shop</a>
+                            <a href="help_advice.php">Help & Advice</a>
+                            <a href="contact.html" class="active">Contact Us</a>
+                            <a href="admin_page.php">Admin</a>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                    <div class="right-links" style="float: right">
+                        <a href="account.php">Account</a>
+                        <a href="logout.php"> <buttom class="btn">Log Out</buttom></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="cat">
+            <h1>Keep your cats safe!</h1>
+            <p class="catintro">
+                Cats, with their curious nature and independent spirit, bring joy and companionship to countless households around the world. However, as responsible pet owners, 
+                it's crucial to recognize the various risks that cats can face in their daily lives. From household hazards to outdoor dangers, ensuring the safety of our feline 
+                friends is paramount.
+            </p>
+            <p class="catintro">
+                In this guide, we'll delve into the essentials of cat safety, offering insights and practical tips to create a secure environment for your beloved pet. Whether 
+                you're a seasoned cat owner or considering adopting a cat for the first time, understanding the principles of cat safety is fundamental to providing a loving and 
+                protective home.
+            </p>
+            <p class="catintro">
+                Join us as we explore the key aspects of cat safety, from indoor hazards to outdoor adventures, and discover how you can keep your furry companion safe, happy, and 
+                thriving for years to come.
+            </p>
+            <div class="row">
+                <h2>Cat Safety Checklist</h2>
+                <p>
+                    Using a checklist for keeping your pet cat safe is essential for ensuring their well-being and preventing potential hazards. This checklist serves as a comprehensive 
+                    guide to cover all aspects of your cat's safety, including health, environment, and daily care. By systematically checking off each item on the list, you can ensure 
+                    that you're providing your cat with the necessary care, protection, and preventive measures. Additionally, having a checklist helps you stay organized and ensures that 
+                    no critical aspect of your cat's safety is overlooked. Ultimately, using this checklist helps promote a safe and healthy environment for your beloved feline companion, 
+                    contributing to their overall happiness and longevity.
+                </p>
+                <a href="help-advice-pages/CatSafetyCheckList.xlsx" download>
+                    <img src="help-advice-pages/Checklist.png" width="300">
+                </a>
+                <p>Download the file to gain access to the document by clicking on the image</p>
+            </div>
+            <div class="row">
+                <h2>Cat Safety Tips</h2>
+                <div class="catintro">
+                    <strong>1) Indoor Hazards</strong>
+                    <p>
+                        Many household items can pose risks to your cat. Keep harmful substances like cleaning agents, medications, and plants out of reach. Secure electrical cords to prevent chewing,
+                        and be cautious of small objects that could be swallowed.
+                    </p>
+                    <strong>2) Proper Nutrition</strong>
+                    <p>
+                    Providing a balanced diet is essential for your cat's health. Consult with your veterinarian to determine the appropriate food and portion sizes for your cat's age, weight, 
+                    and activity level. Avoid feeding your cat human foods that may be toxic to them, such as chocolate, onions, and grapes.
+                    </p>
+                    <strong>3) Regular Veterinary Care</strong>
+                    <p>
+                    Schedule annual check-ups with your veterinarian to monitor your cat's health and address any concerns. Keep your cat up to date on vaccinations to protect against common 
+                    diseases.
+                    </p>
+                    <strong>4) Identification</strong>
+                    <p>
+                    Ensure your cat has proper identification, such as a collar with ID tags and a microchip. This increases the chances of a safe return if your cat becomes lost.
+                    </p>
+                    <strong>5) Safe Environment</strong>
+                    <p>
+                    Create a secure indoor environment for your cat by ensuring windows and balconies are screened or secured to prevent falls. Provide plenty of vertical spaces for climbing 
+                    and resting, and consider enriching your cat's environment with toys, scratching posts, and hiding spots.
+                    </p>
+                    <strong>6) Spaying/Neutering</strong>
+                    <p>
+                    Spaying or neutering your cat not only helps control the pet population but also provides health benefits and reduces the risk of certain medical conditions.
+                    </p>
+                    <strong>7) Stress Reduction</strong>
+                    <p>
+                    Cats can be sensitive to changes in their environment. Minimize stress by providing a consistent routine, a quiet retreat area, and positive reinforcement during interactions.
+                    </p>
+                    <strong>8) Supervised Outdoor Time</strong>
+                    <p>
+                    If you allow your cat outdoors, do so in a controlled manner. Consider harness training and supervised outings to minimize the risk of accidents, injuries, and encounters 
+                    with other animals.
+                    </p>
+                    <strong>9) Emergancy Preparedness</strong>
+                    <p>
+                    Have a plan in place for emergencies, including natural disasters and medical emergencies. Keep a pet first aid kit on hand and know the location of the nearest emergency 
+                    veterinary clinic.
+                    </p>
+                    <strong>10) Educate Yourself</strong>
+                    <p>
+                    Stay informed about common cat health issues, behaviors, and safety concerns. Being knowledgeable about your cat's needs will help you provide the best possible care and 
+                    ensure their safety and well-being.
+                    </p>
+                    <p>
+                    By following these cat safety tips, you can create a loving and secure environment for your feline companion, promoting a happy and healthy life together. Remember, your 
+                    cat relies on you for their safety and well-being, so taking proactive measures is essential for their overall happiness and longevity.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script>
+            window.embeddedChatbotConfig = {
+            chatbotId: "LaKRJr_-iPekl6Al0xMG6",
+            domain: "www.chatbase.co"
+            }
+        </script>
+        <script
+            src="https://www.chatbase.co/embed.min.js"
+            chatbotId="LaKRJr_-iPekl6Al0xMG6"
+            domain="www.chatbase.co"
+            defer>
+        </script>
+    </body>
+</html>
