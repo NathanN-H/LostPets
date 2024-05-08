@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306:3306
--- Generation Time: May 07, 2024 at 09:40 PM
+-- Generation Time: May 08, 2024 at 01:25 PM
 -- Server version: 8.2.0
 -- PHP Version: 8.2.13
 
@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `answers` (
   PRIMARY KEY (`id`),
   KEY `user_id` (`user_id`),
   KEY `question_id` (`question_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=37 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=39 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `answers`
@@ -65,7 +65,7 @@ CREATE TABLE IF NOT EXISTS `found_pets` (
   `approved` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `fk_user_id` (`user_id`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `found_pets`
@@ -92,7 +92,7 @@ CREATE TABLE IF NOT EXISTS `missing_pets` (
   `approved` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `fk_user_id` (`user_id`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=65 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=66 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `missing_pets`
@@ -115,7 +115,7 @@ CREATE TABLE IF NOT EXISTS `questions` (
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   KEY `user_id` (`user_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `questions`
@@ -141,7 +141,7 @@ CREATE TABLE IF NOT EXISTS `shop_items` (
   `stock_quantity` int NOT NULL,
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `shop_items`
@@ -196,7 +196,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `address` varchar(255) NOT NULL,
   `points` int NOT NULL,
   PRIMARY KEY (`Id`)
-) ENGINE=MyISAM AUTO_INCREMENT=41 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=42 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `user`
@@ -204,7 +204,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 
 INSERT INTO `user` (`Id`, `Username`, `Email`, `Age`, `Password`, `petdescription`, `address`, `points`) VALUES
 (34, 'Brian', 'brian@gmail.com', 45, '$2y$10$LEcZAo5PYX2a2p0yxFxeRu.iOthWwi1NLYjWSKUk34GPb..leYOTO', NULL, '', 130),
-(29, 'admin', 'admin1234@gmail.com', 12, '$2y$10$OJGhqYqKNEz4gKUqNmpgVecLMPP3MQ7qvkYWs1Mcp1KibVVU/3TPW', 'adaf ga gsa', 'Saltwell, Gateshead NE8 4SH', 4985684),
+(29, 'admin', 'admin1234@gmail.com', 12, '$2y$10$OJGhqYqKNEz4gKUqNmpgVecLMPP3MQ7qvkYWs1Mcp1KibVVU/3TPW', 'adaf ga gsa', '301 Rawling Road', 4984684),
 (40, 'nathan', 'nathanhearne@gmail.com', 212, '$2y$10$/Za3R2sn6HvtlfUlnVNFzeYr1dWjmcQ1YT.uS5Ay0k90D4MRG0Bjm', 'I love dogs and cats', '301 rawling road', 50);
 
 -- --------------------------------------------------------
@@ -223,7 +223,7 @@ CREATE TABLE IF NOT EXISTS `user_items` (
   PRIMARY KEY (`id`),
   KEY `user_id` (`user_id`),
   KEY `fk_voucher_id_shop_vouchers` (`item_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `user_items`
@@ -240,7 +240,8 @@ INSERT INTO `user_items` (`id`, `user_id`, `item_id`, `purchase_date`, `approved
 (8, 29, 9, '2024-05-01 12:39:59', 1),
 (9, 29, 22, '2024-05-01 15:56:40', 0),
 (10, 39, 12, '2024-05-01 21:12:15', 0),
-(11, 29, 19, '2024-05-07 16:32:25', 1);
+(11, 29, 19, '2024-05-07 16:32:25', 1),
+(12, 29, 22, '2024-05-08 13:18:17', 1);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
