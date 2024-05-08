@@ -18,3 +18,6 @@ Individual Project Dissertation
 - JAVASCRIPT
 - GOOGLE MAPS API
 - Local Storage
+
+#Other
+I had used an IDE of Video Studio Code and for the server I had used a wampserver.
