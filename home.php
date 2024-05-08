@@ -199,7 +199,7 @@
 
         <div class="row">
             <div class="topcol">
-                <a href="help_advice.html"><img src="Design-Images\help.jpg" alt="Help-Advice" width="50%"></a>
+                <a href="help_advice.php"><img src="Design-Images\help.jpg" alt="Help-Advice" width="50%"></a>
                 <p style="font-size: 30px;">Help & Advice</p>
             </div>
             <div class="column">
