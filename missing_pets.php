@@ -76,7 +76,7 @@ if (!isset($_SESSION['valid'])) {
             margin: auto;
         }
         .missingImg{
-            width:50%;
+            width:20%;
         }
     </style>
 </head>
